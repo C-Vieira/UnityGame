@@ -1,9 +1,15 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
     public float speed = 5.0f;
     public Rigidbody2D rb;
+
+    // Point position for instancing projectiles
+    public Transform firePoint;
+    // Projectile prefab to shoot
+    public GameObject bullet;
 
     Vector2 direction;
 
@@ -24,8 +30,15 @@ public class PlayerController : MonoBehaviour
     */
     private void HandleInput()
     {
+        // Handle movement
         direction.x = Input.GetAxisRaw("Horizontal");
         direction.y = Input.GetAxisRaw("Vertical");
+
+        // Handle shooting
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            Shoot();
+        }
     }
 
     /*
@@ -34,5 +47,13 @@ public class PlayerController : MonoBehaviour
     private void MovePlayer()
     {
         rb.MovePosition(rb.position + direction * speed * Time.deltaTime);
+    }
+
+    /*
+    *  Instantiates a copy of the specified "bullet" prefab
+    */
+    private void Shoot()
+    {
+        Instantiate(bullet, firePoint.position, firePoint.rotation);
     }
 }
