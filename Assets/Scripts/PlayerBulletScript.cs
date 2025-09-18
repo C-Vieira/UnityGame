@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerBulletScript : MonoBehaviour
 {
     public float speed = 20.0f;
+    public float damage = 1.0f;
     public Rigidbody2D rb;
 
     void Start()
@@ -12,13 +13,13 @@ public class PlayerBulletScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy"))
+        EnemyScript enemyScript = other.GetComponent<EnemyScript>();
+        if (enemyScript != null)
         {
-            // Destroy the hit enemy
-            Destroy(other.gameObject);
-            // TODO: Award some points per enemy defeated
+            // Deal damage to enemy
+            enemyScript.Health -= damage;
 
-            // Also destroy the bullet object
+            // Destroy the bullet object
             Destroy(gameObject);
         }
     }
