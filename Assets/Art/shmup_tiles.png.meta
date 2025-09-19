@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: e85775f3ffed0ab4b9f59c8a8580ed35
+guid: 0bcf87416d542da4c9cdd5e9fcb797dc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8854360801405805236
-    second: shmup_sprites 1_0
+      213: 248747291265332749
+    second: shmup_tiles_0
   - first:
-      213: -8159002392168048685
-    second: shmup_sprites 1_1
+      213: 1940334424431597222
+    second: shmup_tiles_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shmup_sprites 1_0
+      name: shmup_tiles_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4b2afe88c3201ea70800000000000000
-      internalID: 8854360801405805236
+      spriteID: d06f5bee75ab37300800000000000000
+      internalID: 248747291265332749
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shmup_sprites 1_1
+      name: shmup_tiles_1
       rect:
         serializedVersion: 2
         x: 16
@@ -153,30 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d7d2457d8665ce80800000000000000
-      internalID: -8159002392168048685
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shmup_sprites 1_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 65d7beabee8b2e84a9fbbf6110329a1d
-      internalID: -1860955549
+      spriteID: 6a615b1f0e37dea10800000000000000
+      internalID: 1940334424431597222
       vertices: []
       indices: 
       edges: []
@@ -185,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9fd49a436427cc145a6032c1167a15f3
+    spriteID: eb4137dd5ac50e644ab631b4e30f7f4b
     internalID: 0
     vertices: []
     indices: 
@@ -195,9 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      shmup_sprites 1_0: 8854360801405805236
-      shmup_sprites 1_1: -8159002392168048685
-      shmup_sprites 1_2: -1860955549
+      shmup_tiles_0: 248747291265332749
+      shmup_tiles_1: 1940334424431597222
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

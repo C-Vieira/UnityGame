@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -46,7 +47,10 @@ public class PlayerController : MonoBehaviour
     */
     private void MovePlayer()
     {
-        rb.MovePosition(rb.position + direction * speed * Time.deltaTime);
+        //rb.MovePosition(rb.position + direction * speed * Time.deltaTime);
+
+        // Updating velocity for automatic collisions
+        rb.linearVelocity = new Vector2(direction.x, direction.y) * speed;
     }
 
     /*

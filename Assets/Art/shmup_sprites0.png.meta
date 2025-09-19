@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: e85775f3ffed0ab4b9f59c8a8580ed35
+guid: 35ea3b7fcd96c7d499c883b8c21f93a8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8854360801405805236
-    second: shmup_sprites 1_0
+      213: 6559199885368840229
+    second: shmup_sprites_0
   - first:
-      213: -8159002392168048685
-    second: shmup_sprites 1_1
+      213: -5148298528544515056
+    second: shmup_sprites_1
+  - first:
+      213: 1115831056916985924
+    second: shmup_sprites_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -116,7 +119,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shmup_sprites 1_0
+      name: shmup_sprites_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +134,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4b2afe88c3201ea70800000000000000
-      internalID: 8854360801405805236
+      spriteID: 520513a2b85f60b50800000000000000
+      internalID: 6559199885368840229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shmup_sprites 1_1
+      name: shmup_sprites_1
       rect:
         serializedVersion: 2
         x: 16
@@ -153,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3d7d2457d8665ce80800000000000000
-      internalID: -8159002392168048685
+      spriteID: 01c1070e3c19d88b0800000000000000
+      internalID: -5148298528544515056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shmup_sprites 1_2
+      name: shmup_sprites_2
       rect:
         serializedVersion: 2
         x: 32
@@ -173,10 +176,32 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 448b2e03f6a3c7f00800000000000000
+      internalID: 1115831056916985924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shmup_sprites_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65d7beabee8b2e84a9fbbf6110329a1d
-      internalID: -1860955549
+      spriteID: 5ca122a339125a14a89a3f62e011aa23
+      internalID: 1175679470
       vertices: []
       indices: 
       edges: []
@@ -185,7 +210,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9fd49a436427cc145a6032c1167a15f3
+    spriteID: c0ccd2f5f8c435b4682237d919d192f5
     internalID: 0
     vertices: []
     indices: 
@@ -195,9 +220,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      shmup_sprites 1_0: 8854360801405805236
-      shmup_sprites 1_1: -8159002392168048685
-      shmup_sprites 1_2: -1860955549
+      shmup_sprites_0: 6559199885368840229
+      shmup_sprites_1: -5148298528544515056
+      shmup_sprites_2: 1115831056916985924
+      shmup_sprites_3: 1175679470
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
