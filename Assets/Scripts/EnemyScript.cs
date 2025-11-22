@@ -44,6 +44,9 @@ public class EnemyScript : MonoBehaviour
         // Give Score
         GameState.UpdateScore(score);
 
+        // Increase enemy count
+        GameState.IncreaseEnemyCount();
+
         // Destroy the game object
         Destroy(gameObject);
     }

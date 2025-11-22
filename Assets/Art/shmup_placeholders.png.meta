@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: 3f9be690dbbb4014d8745fd5d7cce2f5
+guid: 659a04bf84e00ea49a3275a0571e6a81
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6336476602635322300
-    second: shmup_tiles2_0
+      213: -7607682624526747396
+    second: shmup_placeholders_0
   - first:
-      213: -7762116356931507931
-    second: shmup_tiles2_1
+      213: -3680823425924587603
+    second: shmup_placeholders_1
+  - first:
+      213: -8679395721334156702
+    second: shmup_placeholders_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -78,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -116,7 +119,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: shmup_tiles2_0
+      name: shmup_placeholders_0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +134,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 44cf85c1a105018a0800000000000000
-      internalID: -6336476602635322300
+      spriteID: cf8fb21d5f41c6690800000000000000
+      internalID: -7607682624526747396
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: shmup_tiles2_1
+      name: shmup_placeholders_1
       rect:
         serializedVersion: 2
         x: 16
@@ -153,8 +156,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52929df7c4c674490800000000000000
-      internalID: -7762116356931507931
+      spriteID: daf14d098961becc0800000000000000
+      internalID: -3680823425924587603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shmup_placeholders_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26215dca3979c8780800000000000000
+      internalID: -8679395721334156702
       vertices: []
       indices: 
       edges: []
@@ -163,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: bbb470cb8a5e1254c9f2ac26a3e7b2d2
+    spriteID: 666fd0fd62faaf240938b091191c232b
     internalID: 0
     vertices: []
     indices: 
@@ -173,8 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      shmup_tiles2_0: -6336476602635322300
-      shmup_tiles2_1: -7762116356931507931
+      shmup_placeholders_0: -7607682624526747396
+      shmup_placeholders_1: -3680823425924587603
+      shmup_placeholders_2: -8679395721334156702
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

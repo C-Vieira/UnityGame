@@ -153,8 +153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 16.9439, y: 0}
-  m_SizeDelta: {x: 508.8976, y: 100}
+  m_AnchoredPosition: {x: 7.1765, y: -94.15573}
+  m_SizeDelta: {x: 632.88, y: 108.201}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &195497109
 MonoBehaviour:
@@ -189,7 +189,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Press SPACE to play -'
+  m_Text: '- Press SPACE to return -'
 --- !u!222 &195497110
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -294,6 +294,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 608429542}
+  - {fileID: 1372913883}
   - {fileID: 195497108}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -311,9 +312,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 291138453}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9979ec49ba0798f45894e29a65cf8e53, type: 3}
+  m_Script: {fileID: 11500000, guid: 70d8787a3c714c0479816a47366dab45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  finalScoreText: {fileID: 1372913884}
 --- !u!1 &608429541
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +328,7 @@ GameObject:
   - component: {fileID: 608429544}
   - component: {fileID: 608429543}
   m_Layer: 5
-  m_Name: TitleText
+  m_Name: VictoryText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -348,8 +350,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 12.3013, y: 117.875916}
-  m_SizeDelta: {x: 589.824, y: 171.0064}
+  m_AnchoredPosition: {x: 7.1755, y: 106.59955}
+  m_SizeDelta: {x: 632.879, y: 148.4536}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &608429543
 MonoBehaviour:
@@ -384,7 +386,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MICRO-ships
+  m_Text: You Win!
 --- !u!222 &608429544
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -392,6 +394,85 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 608429541}
+  m_CullTransparentMesh: 1
+--- !u!1 &1372913882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1372913883}
+  - component: {fileID: 1372913885}
+  - component: {fileID: 1372913884}
+  m_Layer: 5
+  m_Name: FinalScoreText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1372913883
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372913882}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 291138457}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -8.201, y: 0}
+  m_SizeDelta: {x: 507.8141, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1372913884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372913882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8156863, g: 1, b: 0.53333336, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 9bba5e706d4566b47b0aba080ed434d7, type: 3}
+    m_FontSize: 32
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Final Score: 0'
+--- !u!222 &1372913885
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372913882}
   m_CullTransparentMesh: 1
 --- !u!1 &1720273866
 GameObject:

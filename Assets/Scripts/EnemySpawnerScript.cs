@@ -6,10 +6,13 @@ public class EnemySpawnerScript : MonoBehaviour
     public BoxCollider2D spawnerArea;
     public GameObject enemyBasic;
     public float enemyBasicTimeInterval = 3.0f;
+    public GameObject enemyMedium;
+    public float enemyMediumTimeInterval = 8.0f;
 
     void Start()
     {
         StartCoroutine(spawnEnemy(enemyBasicTimeInterval, enemyBasic));
+        StartCoroutine(spawnEnemy(enemyMediumTimeInterval, enemyMedium));
     }
 
     private IEnumerator spawnEnemy(float timeInterval, GameObject enemy)

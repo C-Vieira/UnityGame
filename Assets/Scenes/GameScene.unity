@@ -165,6 +165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   livesText: {fileID: 1054631521}
   scoreText: {fileID: 438978082}
+  enemyCountText: {fileID: 318685246}
 --- !u!1 &250896633
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,6 +212,85 @@ Transform:
   - {fileID: 1199009838}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &318685244
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 318685245}
+  - component: {fileID: 318685247}
+  - component: {fileID: 318685246}
+  m_Layer: 5
+  m_Name: EnemyCountText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &318685245
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318685244}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1077215049}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -738, y: -470.5}
+  m_SizeDelta: {x: 246.5, y: 37.7757}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &318685246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318685244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.81568635, g: 1, b: 0.53333336, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 9bba5e706d4566b47b0aba080ed434d7, type: 3}
+    m_FontSize: 32
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 0 / 100
+--- !u!222 &318685247
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318685244}
+  m_CullTransparentMesh: 1
 --- !u!1 &438978080
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,6 +642,7 @@ RectTransform:
   m_Children:
   - {fileID: 1054631520}
   - {fileID: 438978081}
+  - {fileID: 318685245}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -715,7 +796,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -5
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.03125, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -1512,7 +1593,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -5
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.03125, y: 0, z: 0}
+  m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
@@ -2976,12 +3057,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9161621732065683108, guid: 4611b49e44c8d6b4e8979de9c28a210b, type: 3}
     - target: {fileID: 3858569406038345886, guid: d349db7d4411f374fb032377bf1c0249, type: 3}
+      propertyPath: enemyMedium
+      value: 
+      objectReference: {fileID: 9161621732065683108, guid: e9fef85c239f790408b80bb0b20d827e, type: 3}
+    - target: {fileID: 3858569406038345886, guid: d349db7d4411f374fb032377bf1c0249, type: 3}
       propertyPath: spawnerArea
       value: 
       objectReference: {fileID: 868966085}
     - target: {fileID: 3858569406038345886, guid: d349db7d4411f374fb032377bf1c0249, type: 3}
       propertyPath: enemyBasicTimeInterval
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3858569406038345886, guid: d349db7d4411f374fb032377bf1c0249, type: 3}
+      propertyPath: enemyMediumTimeInterval
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8843969284647801981, guid: d349db7d4411f374fb032377bf1c0249, type: 3}
       propertyPath: m_Name
