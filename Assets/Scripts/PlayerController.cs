@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
 
     // Sounds
     public AudioClip shootSound;
+    public AudioSource shootAudio;
 
     Vector2 direction;
 
@@ -63,9 +64,7 @@ public class PlayerController : MonoBehaviour
     {
         Instantiate(bullet, firePoint.position, firePoint.rotation);
 
-        // Play sound (3x for louder)
-        AudioSource.PlayClipAtPoint(shootSound, transform.position);
-        AudioSource.PlayClipAtPoint(shootSound, transform.position);
-        AudioSource.PlayClipAtPoint(shootSound, transform.position);
+        // Play sound
+        shootAudio.PlayOneShot(shootSound);
     }
 }

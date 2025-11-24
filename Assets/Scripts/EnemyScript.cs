@@ -10,10 +10,8 @@ public class EnemyScript : MonoBehaviour
         {
             if (!isInvincible)
             {
-                // Play hurt sound (3x for louder)
-                AudioSource.PlayClipAtPoint(hurtSound, transform.position);
-                AudioSource.PlayClipAtPoint(hurtSound, transform.position);
-                AudioSource.PlayClipAtPoint(hurtSound, transform.position);
+                // Play hurt sound
+                audioComponent.PlayOneShot(hurtSound);
 
                 health = value;
             }
@@ -37,6 +35,7 @@ public class EnemyScript : MonoBehaviour
     // Sounds
     public AudioClip hurtSound;
     public AudioClip deathSound;
+    public AudioSource audioComponent;
 
     public float score = 5.0f;
 
@@ -56,10 +55,8 @@ public class EnemyScript : MonoBehaviour
         // Increase enemy count
         GameState.IncreaseEnemyCount();
 
-        // Play death sound (3x for louder)
-        AudioSource.PlayClipAtPoint(deathSound, transform.position);
-        AudioSource.PlayClipAtPoint(deathSound, transform.position);
-        AudioSource.PlayClipAtPoint(deathSound, transform.position);
+        // Play death sound
+        audioComponent.PlayOneShot(deathSound);
 
         // Destroy the game object
         Destroy(gameObject);
