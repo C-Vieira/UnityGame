@@ -167,10 +167,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dbbfe6f0a846d844a0a038885e00fd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 5
   hurtSound: {fileID: 8300000, guid: 6a725d4910d06544b8d512a449098cde, type: 3}
   deathSound: {fileID: 8300000, guid: e8cd8e9330ace234dbd0de158d07a66f, type: 3}
-  score: 10
+  score: 15
 --- !u!114 &3201599922134093769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 990b04ac5b1df064ab09f60aeed112dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 3
   rb: {fileID: 8478702070216319299}
   dashTriggerCollider: {fileID: 5166771568715225841, guid: e4a25c7c129cf5b4385d0e7a34826f90, type: 3}
 --- !u!1001 &3915274048504360158
@@ -196,11 +196,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2046431866946811265, guid: e4a25c7c129cf5b4385d0e7a34826f90, type: 3}
       propertyPath: m_Size.y
-      value: 5.9141088
+      value: 6.9170184
       objectReference: {fileID: 0}
     - target: {fileID: 2046431866946811265, guid: e4a25c7c129cf5b4385d0e7a34826f90, type: 3}
       propertyPath: m_Offset.y
-      value: -3.0578005
+      value: -3.5592554
       objectReference: {fileID: 0}
     - target: {fileID: 4321591771193631058, guid: e4a25c7c129cf5b4385d0e7a34826f90, type: 3}
       propertyPath: m_LocalPosition.x
