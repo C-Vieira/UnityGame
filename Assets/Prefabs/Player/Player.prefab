@@ -212,6 +212,7 @@ MonoBehaviour:
   rb: {fileID: 9097557942023665852}
   firePoint: {fileID: 5394550791758982616}
   bullet: {fileID: 3812275052671047199, guid: 44d554fcaddb32445abc606186dfad70, type: 3}
+  shootSound: {fileID: 8300000, guid: f741d97402de8404d9aa9c50999cab28, type: 3}
 --- !u!1001 &1411024231386855760
 PrefabInstance:
   m_ObjectHideFlags: 0

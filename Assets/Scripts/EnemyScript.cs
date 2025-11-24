@@ -10,6 +10,11 @@ public class EnemyScript : MonoBehaviour
         {
             if (!isInvincible)
             {
+                // Play hurt sound (3x for louder)
+                AudioSource.PlayClipAtPoint(hurtSound, transform.position);
+                AudioSource.PlayClipAtPoint(hurtSound, transform.position);
+                AudioSource.PlayClipAtPoint(hurtSound, transform.position);
+
                 health = value;
             }
             
@@ -29,6 +34,10 @@ public class EnemyScript : MonoBehaviour
     // Make enemies not take damage when offscreen
     private bool isInvincible = true;
 
+    // Sounds
+    public AudioClip hurtSound;
+    public AudioClip deathSound;
+
     public float score = 5.0f;
 
     // Make enemies able to take damage only after they appear on screen
@@ -46,6 +55,11 @@ public class EnemyScript : MonoBehaviour
 
         // Increase enemy count
         GameState.IncreaseEnemyCount();
+
+        // Play death sound (3x for louder)
+        AudioSource.PlayClipAtPoint(deathSound, transform.position);
+        AudioSource.PlayClipAtPoint(deathSound, transform.position);
+        AudioSource.PlayClipAtPoint(deathSound, transform.position);
 
         // Destroy the game object
         Destroy(gameObject);

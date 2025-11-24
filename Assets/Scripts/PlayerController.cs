@@ -12,6 +12,9 @@ public class PlayerController : MonoBehaviour
     // Projectile prefab to shoot
     public GameObject bullet;
 
+    // Sounds
+    public AudioClip shootSound;
+
     Vector2 direction;
 
     // Input
@@ -59,5 +62,10 @@ public class PlayerController : MonoBehaviour
     private void Shoot()
     {
         Instantiate(bullet, firePoint.position, firePoint.rotation);
+
+        // Play sound (3x for louder)
+        AudioSource.PlayClipAtPoint(shootSound, transform.position);
+        AudioSource.PlayClipAtPoint(shootSound, transform.position);
+        AudioSource.PlayClipAtPoint(shootSound, transform.position);
     }
 }
